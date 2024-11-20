@@ -1,6 +1,6 @@
-- nom :
-- prénom :
-- URL Netlify :
+- nom : BAUDRY
+- prénom : Léo
+- URL Netlify : https://lighthearted-stroopwafel-35c130.netlify.app/
 
 # Travail
 
