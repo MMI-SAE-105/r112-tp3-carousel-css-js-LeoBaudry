@@ -17,12 +17,6 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 */
 
-.carousel {
-  display : flex;
-  overflow-x : scroll;
-  scroll-snap-type : x mandatory; 
-}
-
 /* Compléter la suite du code */
 .carousel__controls {
   display: flex;
