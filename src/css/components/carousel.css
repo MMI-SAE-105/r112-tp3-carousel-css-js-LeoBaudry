@@ -31,8 +31,8 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   /* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
 }
 .carousel__button {
-  width: 50px;
-  height: 50px;
+  width: 4vw;
+  height: 4vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,8 +68,9 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item {
-  flex: 1 0 260px;
+  flex: 1 0 50vw;
   scroll-snap-align: center;
+  
 
   /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
