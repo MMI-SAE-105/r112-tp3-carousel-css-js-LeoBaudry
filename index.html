@@ -11,25 +11,36 @@
 
 <body>
   <h1>Test Carousel</h1>
+
+  <nav class="carousel__nav">
+    <ul>
+      <li><a href="#item1">Image 1</a></li>
+      <li><a href="#item2">Image 2</a></li>
+      <li><a href="#item3">Image 3</a></li>
+      <li><a href="#item4">Image 4</a></li>
+      <li><a href="#item5">Image 5</a></li>
+    </ul>
+  </nav>
+
   <div class="carousel" aria-labelledby="carousel-heading">
     <h2 id="carousel-heading" class="carousel__heading sr-only">
       Carousel d'images musicales
     </h2>
     <div class="carousel__container" role="region" aria-live="polite">
       <div class="carousel__item">
-        <img src="/assets/img/agenda-01.avif" alt="Image musique 1" />
+        <img src="/assets/img/agenda-01.avif" alt="Image musique 1" id="item1"/>
       </div>
       <div class="carousel__item">
-        <img src="/assets/img/agenda-02.avif" alt="Image musique 2" />
+        <img src="/assets/img/agenda-02.avif" alt="Image musique 2" id="item2"/>
       </div>
       <div class="carousel__item">
-        <img src="/assets/img/agenda-03.avif" alt="Image musique 3" />
+        <img src="/assets/img/agenda-03.avif" alt="Image musique 3" id="item3"/>
       </div>
       <div class="carousel__item">
-        <img src="/assets/img/agenda-04.avif" alt="Image musique 4" />
+        <img src="/assets/img/agenda-04.avif" alt="Image musique 4" id="item4"/>
       </div>
       <div class="carousel__item">
-        <img src="/assets/img/agenda-05.avif" alt="Image musique 5" />
+        <img src="/assets/img/agenda-05.avif" alt="Image musique 5" id="item5"/>
       </div>
     </div>
     <div class="carousel__controls">
