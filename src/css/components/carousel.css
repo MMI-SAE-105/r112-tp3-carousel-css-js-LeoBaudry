@@ -68,9 +68,11 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item {
-  flex: 1 0 50vw;
-  scroll-snap-align: center;
-  
+  flex: 1 0 100%; 
+  scroll-snap-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 
   /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
@@ -79,4 +81,82 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__item img {
   display: block;
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+}
+
+
+
+/*
+.carouselcontainer {
+  display: flex;
+  gap: 16px; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  width: 100%;
+  padding: 16px 0;
+  box-sizing: border-box;
+  position: relative; 
+}
+
+
+.carouselitem img {
+  display: block;
+  max-width: 80%; 
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto; 
+}
+
+
+.carouselcontrols {
+  position: relative;
+}
+
+.carouselbutton {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carouselbutton--prev {
+  left: 16px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carouselbutton--next {
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+
+.carouselnav {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.carouselnav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.carouselnav a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.carousel__nav a:hover {
+  text-decoration: underline;
 }
